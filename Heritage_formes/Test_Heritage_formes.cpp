@@ -13,7 +13,7 @@ using namespace std;
 // fonctions de test à coder
 void partie1()
 {
-    cout << "Test" << endl;
+    cout << "Test P1" << endl;
 
 	CRectangle rect("MonRectangle", 4, 5);
 	rect.afficher();
@@ -21,6 +21,7 @@ void partie1()
 
 	CCarre carre(3);
 	carre.afficher();
+	double tmp = carre.surface();
 	cout << "Surface du carre : " << carre.surface() << endl;
 
 	CTriangle tri("MonTriangle", 4, 6);

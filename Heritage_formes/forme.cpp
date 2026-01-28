@@ -7,7 +7,7 @@
 
 #include "forme.h"
 #include <iostream>
-
+using namespace std;
 CForme::CForme(){
 
 }
@@ -23,7 +23,7 @@ CForme::~CForme(){
  */
 CForme::CForme(string _nom) 
 {
-	this->nom = nom;
+	this->nom = _nom;
 }
 
 

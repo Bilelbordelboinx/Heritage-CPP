@@ -6,8 +6,8 @@
 ///////////////////////////////////////////////////////////
 
 #include "carre.h"
-
-
+#include <iostream>
+using namespace std;
 CCarre::CCarre(){
 
 }
@@ -25,11 +25,14 @@ CCarre::CCarre(int _cote) : CRectangle("Carre", _cote, _cote)
 }
 
 
-void CCarre::afficher(){
-
+void CCarre::afficher()
+{
+	/*CForme::afficher();
+	cout << "Type : Carré, Côté : " << largeur << endl;*/
+	CRectangle::afficher();
 }
 
 double CCarre::surface(){
 
-	return 0;
+	return CRectangle::surface();
 }

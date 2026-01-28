@@ -6,7 +6,8 @@
 ///////////////////////////////////////////////////////////
 
 #include "triangle.h"
-
+using namespace std;
+#include <iostream>
 
 CTriangle::CTriangle(){
 
@@ -19,13 +20,15 @@ CTriangle::~CTriangle(){
 }
 
 
-CTriangle::CTriangle(string nom, int _hauteur, int _base){
+CTriangle::CTriangle(string _nom, int _hauteur, int _base) :CForme(_nom),hauteur(_hauteur),base(_base) {
 
 }
 
 
-void CTriangle::afficher(){
-
+void CTriangle::afficher()
+{
+	CForme::afficher();
+	cout << "Type : Triangle, Base : " << base << ", Hauteur : " << hauteur << endl;
 }
 
 
