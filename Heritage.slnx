@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Heritage_formes/Heritage_formes.vcxproj" Id="12feebb1-b1d8-44a5-b2a1-fbf0775aa9d3" />
+</Solution>
