@@ -7,7 +7,7 @@
 #include "carre.h"
 #include "triangle.h"
 #include "OctogoneRegulier.h"
-
+#include "cercle.h"
 using namespace std;
 
 // fonctions de test à coder
@@ -66,9 +66,28 @@ void partie6()
 	CCarre monCarre(5.0);
 	std::cout << "Surface du carre (via CRectangle) : " << monCarre.surface() << std::endl;
 }
+void partie7()
+{ 
+	const int nb = 5; 
+	CForme* mesFormes[nb];
+
+	mesFormes[0] = new CRectangle("Rect", 10, 5);
+	mesFormes[1] = new CCarre(4);
+	mesFormes[2] = new CTriangle("Tri", 6, 4);
+	mesFormes[3] = new COctogoneRegulier("Octo", 3);
+	mesFormes[4] = new CCercle("Cercle", 5.0);
+
+	for (int i = 0; i < nb; i++) {
+		mesFormes[i]->afficher();
+		std::cout << "Surface : " << mesFormes[i]->surface() << std::endl;
+		delete mesFormes[i];
+	}
+
+}
+		
 int main()
 {
-	partie6();
+	partie7();
 	return 0;
 }
 
