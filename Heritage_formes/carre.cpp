@@ -32,7 +32,3 @@ void CCarre::afficher()
 	CRectangle::afficher();
 }
 
-double CCarre::surface(){
-
-	return CRectangle::surface();
-}

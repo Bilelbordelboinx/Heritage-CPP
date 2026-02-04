@@ -60,9 +60,15 @@ void partie5()
 		delete mesFormes[i];
 	}
 }
+void partie6()
+{
+	cout << "Test P6" << endl;
+	CCarre monCarre(5.0);
+	std::cout << "Surface du carre (via CRectangle) : " << monCarre.surface() << std::endl;
+}
 int main()
 {
-	partie5();
+	partie6();
 	return 0;
 }
 
