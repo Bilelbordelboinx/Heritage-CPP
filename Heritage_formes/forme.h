@@ -16,11 +16,11 @@ class CForme
 
 public:
 	CForme();
-	 ~CForme();
+	 virtual~CForme();
 
 	CForme(string _nom);
-	void afficher();
-	double surface();
+	virtual void afficher();
+	virtual double surface();
 
 private:
 	/**
