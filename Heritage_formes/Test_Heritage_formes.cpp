@@ -39,10 +39,30 @@ void partie2() {
 	cout << "Surface via pointeur : " << ptrForme->surface() << std::endl;
 	delete ptrForme;
 }
-CForme maForme("Test");
+void partie5()
+{
+	cout << "Test P5" << endl;
+	const int nbFormes = 4;
+	CForme* mesFormes[nbFormes];
+
+	mesFormes[0] = new CRectangle("Rectangle_P5", 10.0, 5.0);
+	mesFormes[1] = new CCarre(4.0);
+	mesFormes[2] = new CTriangle("Triangle_P5", 6.0, 4.0);
+	mesFormes[3] = new COctogoneRegulier("Octogone_P5", 3.0);
+
+	for (int i = 0; i < nbFormes; i++) {
+		mesFormes[i]->afficher();
+		std::cout << "Surface : " << mesFormes[i]->surface() << std::endl;
+		std::cout << "-----------------------------------" << std::endl;
+	}
+
+	for (int i = 0; i < nbFormes; i++) {
+		delete mesFormes[i];
+	}
+}
 int main()
 {
-	partie2();
+	partie5();
 	return 0;
 }
 
