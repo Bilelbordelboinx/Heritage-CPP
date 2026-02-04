@@ -39,7 +39,7 @@ void partie2() {
 	cout << "Surface via pointeur : " << ptrForme->surface() << std::endl;
 	delete ptrForme;
 }
-
+CForme maForme("Test");
 int main()
 {
 	partie2();

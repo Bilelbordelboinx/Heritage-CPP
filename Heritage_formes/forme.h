@@ -20,7 +20,7 @@ public:
 
 	CForme(string _nom);
 	virtual void afficher();
-	virtual double surface();
+	virtual double surface() = 0;
 
 private:
 	/**
