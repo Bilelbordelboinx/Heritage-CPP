@@ -32,12 +32,17 @@ void partie1()
 	octo.afficher();
 	cout << "Surface de l'octogone : " << octo.surface() << endl;
 }
-void partie2();
-/// etc...
+void partie2() {
+	cout << "Test P2" << std::endl;
+	CForme* ptrForme;
+	ptrForme = new CRectangle("Rectangle_Dynamique", 10, 5);
+	cout << "Surface via pointeur : " << ptrForme->surface() << std::endl;
+	delete ptrForme;
+}
 
 int main()
 {
-	partie1();
+	partie2();
 	return 0;
 }
 
