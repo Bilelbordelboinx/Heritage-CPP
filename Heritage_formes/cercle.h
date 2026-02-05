@@ -6,15 +6,15 @@
 
 class CCercle : public CForme {
 private:
-    double rayon; // Attribut demandé
+	double rayon; // Rayon du cercle
 
 public:
     CCercle(string _nom, double _rayon);
-    virtual ~CCercle();
+	virtual ~CCercle(); // Destructeur virtuel
 
-    // Redéfinition des méthodes obligatoires
-    void afficher() override;
-    double surface() override;
+    
+	void afficher() override; // Affiche les détails du cercle
+	double surface() override; // Calcule et retourne la surface du cercle
 };
 
 #endif
