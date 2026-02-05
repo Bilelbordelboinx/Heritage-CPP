@@ -1,5 +1,13 @@
 // Heritage_formes.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
 //
+///////////////////////////////////////////////////////////
+//  Test_Heritage_formes.cpp
+//  Implementation of the Main Test Function
+//  Created on:      05-févr.-2026 21:00:00
+//  Original author: Utilisateur
+//  Secondary author: Enzo Demeiller
+///////////////////////////////////////////////////////////
+
 
 #include <iostream>
 #include "forme.h"

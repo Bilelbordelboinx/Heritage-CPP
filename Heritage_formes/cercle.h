@@ -1,3 +1,10 @@
+///////////////////////////////////////////////////////////
+//  cercle.h
+//  Implementation of the Class CCercle
+//  Created on:      05-févr.-2026 23:00:00
+//  Original author: Enzo Demeiller
+///////////////////////////////////////////////////////////
+
 #pragma once
 #ifndef CCERCLE_H
 #define CCERCLE_H

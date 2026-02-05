@@ -1,3 +1,12 @@
+///////////////////////////////////////////////////////////
+//  cercle.cpp
+//  Implementation of the Class CCercle
+//  Created on:      05-févr.-2026 23:05:00
+//  Original author: Enzo Demeiller
+///////////////////////////////////////////////////////////
+
+
+
 #include "cercle.h"
 #include <iostream>
 #include <cmath> // Pour M_PI
